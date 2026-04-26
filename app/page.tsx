@@ -800,15 +800,15 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-playfair text-primary mb-4">ROYAL L'OR NOIR</h3>
+            <h3 className="text-2xl font-playfair text-primary mb-4">ROYAL OYO KITCHEN</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Premium cuisine prepared by world-class chefs in an elegant setting. Where culinary art meets perfection.
             </p>
             <div>
               <h4 className="text-primary text-sm font-medium mb-2">Location</h4>
               <p className="text-gray-400 text-sm">
-                Grand Hotel Boulevard<br />
-                Los Angeles 12345, United States
+                Lane 7, Alhaja Serifat Biliaminu Street<br />
+                Ayetoro, Oyo, Oyo State, Nigeria
               </p>
             </div>
           </div>
@@ -828,17 +828,19 @@ function Footer() {
           <div>
             <h4 className="text-white font-medium mb-6">Hours</h4>
             <p className="text-gray-400 text-sm">
-              Dinner: 18:00 - 23:00<br />
-              Tuesday - Sunday
+             <p>Mon - Sartuday: 8am - 5pm</p>
+             <p>Sunday: 12am - 5pm</p>
             </p>
           </div>
+
+           
 
           {/* Contact */}
           <div>
             <h4 className="text-white font-medium mb-6">Contact</h4>
             <p className="text-gray-400 text-sm mb-4">
               +1 1234 567 8900<br />
-              info@Royal Oyo Kitchenrestaurant.com
+              info@royaloyoKitchen.com
             </p>
             <div className="flex gap-4">
               {["instagram", "facebook", "twitter", "tiktok"].map((social) => (
