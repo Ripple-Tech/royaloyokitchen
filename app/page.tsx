@@ -304,8 +304,7 @@ function AmbienceSection() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors" />
-              </div>
+             </div>
               <p className="text-center text-gray-400 text-sm mt-2 font-cormorant italic">{img.title}</p>
             </div>
           ))}
