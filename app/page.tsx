@@ -168,14 +168,14 @@ function AboutSection() {
           <div className="lg:pl-8">
             <div className="w-16 h-1 bg-gradient-gold mb-6" />
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-white mb-4">
-              About Fine Dining Royal Oyo Kitchen Restaurant
+              About Royal Oyo Kitchen 
             </h2>
             <p className="text-primary font-cormorant text-xl italic mb-6">
               Elegance • Craft • Excellence
             </p>
             <div className="space-y-4 text-gray-400 text-base leading-relaxed">
               <p>
-                Fine Dining Royal Oyo Kitchen presents a luxurious culinary experience that blends French elegance, modern refinement, and world-class hospitality. Every dish is crafted to deliver a captivating journey of flavors.
+                Royal Oyo Kitchen presents a luxurious culinary experience that blends French elegance, modern refinement, and world-class hospitality. Every dish is crafted to deliver a captivating journey of flavors.
               </p>
               <p>
                 With a focus on premium seasonal ingredients, precise cooking techniques, and artistic presentation, Royal Oyo Kitchen stands as a destination for discerning guests who seek uncompromising quality.
@@ -548,7 +548,8 @@ function ArtisanPairingsSection() {
         </div>
       </div>
     </section>
-  );
+  );   
+  
 }
 
 // Private Experiences Section
