@@ -175,7 +175,7 @@ function AboutSection() {
             </p>
             <div className="space-y-4 text-gray-400 text-base leading-relaxed">
               <p>
-                Royal Oyo Kitchen presents a luxurious culinary experience that blends French elegance, modern refinement, and world-class hospitality. Every dish is crafted to deliver a captivating journey of flavors.
+                Royal Oyo Kitchen presents a luxurious culinary experience that blends Nigeria elegance, modern refinement, and world-class hospitality. Every dish is crafted to deliver a captivating journey of flavors.
               </p>
               <p>
                 With a focus on premium seasonal ingredients, precise cooking techniques, and artistic presentation, Royal Oyo Kitchen stands as a destination for discerning guests who seek uncompromising quality.
@@ -202,30 +202,21 @@ function AboutSection() {
 // Menu Section
 function MenuSection() {
   const menuItems = [
-    {
-      name: "Wagyu Tenderloin A5",
-      description: "Truffle, Asparagus, Cognac Sauce",
-      price: "$158",
-      image: ASSETS.food1,
-    },
-    {
-      name: "Pan-Seared Foie Gras",
-      description: "Brioche, Fig Compote, Balsamic Reduction",
-      price: "$132",
-      image: ASSETS.food2,
-    },
-    {
-      name: "Atlantic Lobster Thermidor",
-      description: "Gratinated, White Wine, Dijon Mustard",
-      price: "$168",
-      image: ASSETS.food3,
-    },
-    {
-      name: "Truffle Risotto Nero",
-      description: "Black Truffle, Parmesan, Squid Ink",
-      price: "$98",
-      image: ASSETS.food4,
-    },
+    { name: "Jollof Rice", description: "Classic Nigerian party jollof, slow-cooked over firewood with a rich tomato base and aromatic spices.", price: "₦3,000", image: "/rice.jpg" },
+    { name: "Fried Rice", description: "Golden stir-fried rice loaded with mixed vegetables, seasoned to perfection with our house blend.", price: "₦4,000", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&h=400&fit=crop&q=80" },
+    { name: "Ofada Rice with Sauce", description: "Locally grown unpolished ofada rice served with our signature ayamase (green pepper) sauce.", price: "₦7,000", image: "/ofadarice.jpg" },
+    { name: "Yam Porridge", description: "Hearty yam porridge simmered with palm oil, crayfish, and a blend of West African spices.", price: "₦5,000", image: "/yam.png" },
+    { name: "Asun Rice", description: "Fragrant jollof rice crowned with smoky, peppered goat meat — a bold house specialty.", price: "₦12,000", image: "/asunrice.png" },
+    { name: "Spaghetti Jollof", description: "Nigerian-style jollof spaghetti cooked in a rich tomato and pepper sauce with our special seasoning.", price: "₦4,000", image: "/spaghetti.jpg" },
+    { name: "Grilled Chicken", description: "Whole or half chicken marinated in our house spice blend and grilled over open firewood.", price: "₦6,000", image: "/chicken2.png" },
+    { name: "Grilled Fish", description: "Fresh Croaker or Tilapia marinated in citrus-spice blend, grilled to smoky perfection.", price: "₦18,000", image: "/grilledfish.png" },
+    { name: "Asun", description: "Smoky, peppered goat meat — a Lagos street food classic elevated to its finest form.", price: "₦10,000", image: "/asungrill.jpg" },
+    { name: "Pepper Soup", description: "Deeply aromatic broth bursting with native spices, tender meat, and warming pepper heat.", price: "₦10,000", image: "/goat.png" },
+    { name: "Suya", description: "Thin-sliced beef skewers rubbed in yaji spice mix, char-grilled over hot coals.", price: "₦5,000", image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop&q=80" },
+    { name: "Catfish", description: "Whole catfish seasoned with a house blend of herbs and spices, grilled to golden perfection.", price: "₦15,000", image: "/grilledfish.png" },
+    { name: "Nkwobi", description: "Cow foot slow-cooked in a spiced palm oil and utazi leaf sauce — a true Eastern delicacy.", price: "₦6,000", image: "/nkwobi.png" },
+    { name: "Spaghetti Bolognese", description: "Al dente spaghetti in a rich, slow-simmered beef and tomato ragù with herbs and parmesan.", price: "₦6,000", image: "/spaghettibolognese.jpg" },
+    { name: "Jollof Paella", description: "A West-African twist on the Spanish classic — saffron-kissed rice with seafood and spices.", price: "₦6,000", image: "/jollofpaella.png" },
   ];
 
   return (
@@ -252,7 +243,7 @@ function MenuSection() {
                   <h3 className="text-xl font-cormorant italic text-primary">{item.name}</h3>
                   <p className="text-gray-500 text-sm">{item.description}</p>
                 </div>
-                <span className="text-primary font-medium">{item.price}</span>
+                <span className="text-primary font-medium whitespace-nowrap ml-4">{item.price}</span>
               </div>
               <div className="relative h-48 mt-4 overflow-hidden">
                 <Image
@@ -262,6 +253,14 @@ function MenuSection() {
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
+              <div className="mt-4 flex justify-end">
+                <button
+                  className="flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-widest text-black transition-all duration-300 hover:opacity-90 active:scale-95"
+                  style={{ background: "linear-gradient(135deg, #d4a853 0%, #b8882e 100%)" }}
+                >
+                  Order Now
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -269,7 +268,6 @@ function MenuSection() {
     </section>
   );
 }
-
 // Ambience Section
 function AmbienceSection() {
   const images = [
@@ -840,7 +838,7 @@ function Footer() {
             <h4 className="text-white font-medium mb-6">Contact</h4>
             <p className="text-gray-400 text-sm mb-4">
               +1 1234 567 8900<br />
-              info@royaloyoKitchen.com
+              info@royaloyokitchen.com
             </p>
             <div className="flex gap-4">
               {["instagram", "facebook", "twitter", "tiktok"].map((social) => (
